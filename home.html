@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    
+    <script src="home.js" defer></script>
+    <title>Outgoing calls</title>
+</head>
+<body>
+    <div class="navbar">
+        <li>
+            <a href="https://docs.google.com/spreadsheets/d/13qjohBHGpFiTT5J0P7mFJhQDlcQm_wTDwa185Us993s/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer">Докс координация</a>
+        </li>
+    </div>
+
+    <div class="container">
+        <form action="#" class="data_abonent" name="submit-to-google-sheet">
+            <h2>Добро пожаловать в отдел исходящих звонков</h2>
+            <input type="tel" name="номер телефона" id="номер" autocomplete="off" placeholder="Номер телефона клиента" required>
+            <select id="choices" name="choices" required>
+                <option value="" disabled selected>Выберите тип звонка</option>
+                <option value="Не дозвон установка">Не дозвон установка</option>
+                <option value="Не дозвон ремонт">Не дозвон ремонт</option>
+                <option value="Не дозвон информация">Не дозвон информация</option>
+            </select>
+            <input type="text" name="комментария" id="комментария" autocomplete="off" placeholder="Оставить комментарий">
+            <div class="button-container">
+                <button type="submit"><i class="fab fa-telegram-plane"></i> Отправить</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 Все права защищены</p>
+        <ul>
+            <li>
+                <p>By Miratlipov Javohir <a href="https://t.me/mirtalipov_03"><i class="fab fa-telegram-plane"></a></i></p>
+            </li>
+        </ul>
+    </div>
+
+
+</body>
+</html>
